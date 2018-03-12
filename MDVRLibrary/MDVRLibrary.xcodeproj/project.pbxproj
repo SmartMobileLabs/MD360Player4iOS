@@ -52,6 +52,84 @@
 		5EF561C21D44FFF60023A3DF /* MDPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF561C11D44FFF60023A3DF /* MDPlane.m */; };
 		5EF64E151D393D6F00F11A08 /* MDVideoFrameAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF64E141D393D6F00F11A08 /* MDVideoFrameAdapter.m */; };
 		5EF64E171D39421800F11A08 /* MDIJKAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF64E161D39421800F11A08 /* MDIJKAdapter.m */; };
+		C171102E2056A06B009C92A2 /* MDVRLibraryFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C171102C2056A06B009C92A2 /* MDVRLibraryFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110322056A091009C92A2 /* vrlibraw.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EE7431CBEA832004E0B79 /* vrlibraw.bundle */; };
+		C17110332056A0F5009C92A2 /* MDVector3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EECBB981EC40B040015D35B /* MDVector3D.m */; };
+		C17110342056A0F5009C92A2 /* MDPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EECBB9B1EC40C310015D35B /* MDPosition.m */; };
+		C17110352056A0F5009C92A2 /* MDRay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EECBB9E1EC40C590015D35B /* MDRay.m */; };
+		C17110362056A0F5009C92A2 /* MDHitEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EECBBA11EC40C720015D35B /* MDHitEvent.m */; };
+		C17110372056A0F5009C92A2 /* MDHitPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EECBBA41EC40C8B0015D35B /* MDHitPoint.m */; };
+		C17110382056A0F5009C92A2 /* BarrelDistortionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EECBBA71EC40D2E0015D35B /* BarrelDistortionConfig.m */; };
+		C17110392056A0F5009C92A2 /* TextureProcessConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E146D34202B2E01000CF7C1 /* TextureProcessConfig.m */; };
+		C171103A2056A0F5009C92A2 /* MDVideoDataAdatperAVPlayerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE72A1CBEA5ED004E0B79 /* MDVideoDataAdatperAVPlayerImpl.m */; };
+		C171103B2056A0F5009C92A2 /* MDVideoFrameAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF64E141D393D6F00F11A08 /* MDVideoFrameAdapter.m */; };
+		C171103C2056A0F5009C92A2 /* MDIJKAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF64E161D39421800F11A08 /* MDIJKAdapter.m */; };
+		C171103D2056A0F5009C92A2 /* MDAbsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA133E91D4E3B850090B8AB /* MDAbsPlugin.m */; };
+		C171103E2056A0F5009C92A2 /* MDPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA133EC1D4E3CB60090B8AB /* MDPluginManager.m */; };
+		C171103F2056A0F5009C92A2 /* MDPanoramaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA133EE1D4E3E8F0090B8AB /* MDPanoramaPlugin.m */; };
+		C17110402056A0F5009C92A2 /* MDHotspot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EECBBAA1EC4B5E10015D35B /* MDHotspot.m */; };
+		C17110412056A0F5009C92A2 /* MDAbsLinePipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB70A581F08CE28008A8601 /* MDAbsLinePipe.m */; };
+		C17110422056A0F5009C92A2 /* MDBarrelDistortionLinePipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB70A5A1F08D312008A8601 /* MDBarrelDistortionLinePipe.m */; };
+		C17110432056A0F5009C92A2 /* MDDrawingCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB70A5D1F08D36D008A8601 /* MDDrawingCache.m */; };
+		C17110442056A0F5009C92A2 /* MD360Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE71C1CBEA5ED004E0B79 /* MD360Texture.m */; };
+		C17110452056A0F5009C92A2 /* MDRGBABitmapTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A43BF1D3765E700E6BA74 /* MDRGBABitmapTexture.m */; };
+		C17110462056A0F5009C92A2 /* MDRGBAVideoTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A43BD1D37657C00E6BA74 /* MDRGBAVideoTexture.m */; };
+		C17110472056A0F5009C92A2 /* MDYUV420PVideoTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A43C11D37666500E6BA74 /* MDYUV420PVideoTexture.m */; };
+		C17110482056A0F5009C92A2 /* MD360Program.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE7181CBEA5ED004E0B79 /* MD360Program.m */; };
+		C17110492056A0F5009C92A2 /* MDRGBAProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A43B71D369F1700E6BA74 /* MDRGBAProgram.m */; };
+		C171104A2056A0F5009C92A2 /* MDYUV420PProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A43BA1D36A8C900E6BA74 /* MDYUV420PProgram.m */; };
+		C171104B2056A0F5009C92A2 /* MDRGBAFboProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF08061F10C27400CDACE6 /* MDRGBAFboProgram.m */; };
+		C171104C2056A0F5009C92A2 /* MDModeStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE7271CBEA5ED004E0B79 /* MDModeStrategy.m */; };
+		C171104D2056A0F5009C92A2 /* MDInteractiveStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE7251CBEA5ED004E0B79 /* MDInteractiveStrategy.m */; };
+		C171104E2056A0F5009C92A2 /* MDDisplayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE7201CBEA5ED004E0B79 /* MDDisplayStrategy.m */; };
+		C171104F2056A0F5009C92A2 /* MDProjectionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD55C31D229B5900C01046 /* MDProjectionStrategy.m */; };
+		C17110502056A0F5009C92A2 /* MDAbsObject3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE71E1CBEA5ED004E0B79 /* MDAbsObject3D.m */; };
+		C17110512056A0F5009C92A2 /* MDSphere3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59F6371D242A6B002DADC9 /* MDSphere3D.m */; };
+		C17110522056A0F5009C92A2 /* MDStereoSphere3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59F6391D242AFC002DADC9 /* MDStereoSphere3D.m */; };
+		C17110532056A0F5009C92A2 /* MDDome3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6151C21D277574008DAD4E /* MDDome3D.m */; };
+		C17110542056A0F5009C92A2 /* MDPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF561C11D44FFF60023A3DF /* MDPlane.m */; };
+		C17110552056A0F5009C92A2 /* MDObject3DHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6151C01D2768DD008DAD4E /* MDObject3DHelper.m */; };
+		C17110562056A0F5009C92A2 /* MDPlaneScaleCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF561BF1D44FDCB0023A3DF /* MDPlaneScaleCalculator.m */; };
+		C17110572056A0F5009C92A2 /* MDVRLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE6DC1CBEA56B004E0B79 /* MDVRLibrary.m */; };
+		C17110582056A0F5009C92A2 /* GLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE7141CBEA5ED004E0B79 /* GLUtil.m */; };
+		C17110592056A0F5009C92A2 /* MD360Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE7161CBEA5ED004E0B79 /* MD360Director.m */; };
+		C171105A2056A0F5009C92A2 /* MD360Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE71A1CBEA5ED004E0B79 /* MD360Renderer.m */; };
+		C171105B2056A0F5009C92A2 /* MDGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EE7221CBEA5ED004E0B79 /* MDGLKViewController.m */; };
+		C171105C2056A0F5009C92A2 /* MDTouchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BBA701CE8BA5F00530898 /* MDTouchHelper.m */; };
+		C171105D2056A0F5009C92A2 /* VRUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF08091F10D0B900CDACE6 /* VRUtil.m */; };
+		C171105E2056A162009C92A2 /* MDVector3D.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EECBB971EC40B040015D35B /* MDVector3D.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171105F2056A162009C92A2 /* MDPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EECBB9A1EC40C310015D35B /* MDPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110602056A162009C92A2 /* MDRay.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EECBB9D1EC40C590015D35B /* MDRay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110612056A162009C92A2 /* MDHitEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EECBBA01EC40C720015D35B /* MDHitEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110622056A162009C92A2 /* MDHitPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EECBBA31EC40C8B0015D35B /* MDHitPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110632056A162009C92A2 /* BarrelDistortionConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EECBBA61EC40D2E0015D35B /* BarrelDistortionConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110642056A162009C92A2 /* TextureProcessConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E146D33202B2E01000CF7C1 /* TextureProcessConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110652056A162009C92A2 /* MDVideoDataAdatperAVPlayerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7291CBEA5ED004E0B79 /* MDVideoDataAdatperAVPlayerImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110662056A162009C92A2 /* MDAbsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA133E81D4E3B850090B8AB /* MDAbsPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110672056A162009C92A2 /* MDHotspot.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EECBBA91EC4B5E10015D35B /* MDHotspot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110682056A162009C92A2 /* MDAbsLinePipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB70A571F08CE28008A8601 /* MDAbsLinePipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110692056A162009C92A2 /* MDDrawingCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB70A5C1F08D36D008A8601 /* MDDrawingCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171106A2056A162009C92A2 /* MD360Texture.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE71B1CBEA5ED004E0B79 /* MD360Texture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171106B2056A162009C92A2 /* IMDTextureProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E146DE3202B3540000CF7C1 /* IMDTextureProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171106C2056A162009C92A2 /* MD360Program.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7171CBEA5ED004E0B79 /* MD360Program.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171106D2056A162009C92A2 /* MDModeStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7261CBEA5ED004E0B79 /* MDModeStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171106E2056A162009C92A2 /* MDInteractiveStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7241CBEA5ED004E0B79 /* MDInteractiveStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171106F2056A162009C92A2 /* MDDisplayStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE71F1CBEA5ED004E0B79 /* MDDisplayStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110702056A162009C92A2 /* MDProjectionStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ECD55C21D229B5900C01046 /* MDProjectionStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110712056A162009C92A2 /* MDAbsObject3D.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE71D1CBEA5ED004E0B79 /* MDAbsObject3D.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110722056A162009C92A2 /* MDObject3DHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6151BF1D2768DD008DAD4E /* MDObject3DHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110732056A162009C92A2 /* MDPlaneScaleCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF561BE1D44FDCB0023A3DF /* MDPlaneScaleCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110742056A162009C92A2 /* MDExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF64E121D393C4E00F11A08 /* MDExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110752056A162009C92A2 /* MDVRHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E18034B1D16FEEC00E579FD /* MDVRHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110762056A162009C92A2 /* MDVRLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE6DA1CBEA56B004E0B79 /* MDVRLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110772056A162009C92A2 /* GLUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7131CBEA5ED004E0B79 /* GLUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110782056A162009C92A2 /* MD360Director.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7151CBEA5ED004E0B79 /* MD360Director.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17110792056A162009C92A2 /* MD360Renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7191CBEA5ED004E0B79 /* MD360Renderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171107A2056A162009C92A2 /* MDGLKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7211CBEA5ED004E0B79 /* MDGLKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171107B2056A162009C92A2 /* MDGLRendererDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7231CBEA5ED004E0B79 /* MDGLRendererDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171107C2056A162009C92A2 /* MDVideoDataAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1EE7281CBEA5ED004E0B79 /* MDVideoDataAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171107D2056A162009C92A2 /* MDTouchHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2BBA6F1CE8BA5F00530898 /* MDTouchHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C171107E2056A162009C92A2 /* VRUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EEF08081F10D0B900CDACE6 /* VRUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -147,10 +225,26 @@
 		5EF64E121D393C4E00F11A08 /* MDExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDExt.h; sourceTree = "<group>"; };
 		5EF64E141D393D6F00F11A08 /* MDVideoFrameAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDVideoFrameAdapter.m; sourceTree = "<group>"; };
 		5EF64E161D39421800F11A08 /* MDIJKAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDIJKAdapter.m; sourceTree = "<group>"; };
+		C1710F7A205691A0009C92A2 /* libActionSheetPicker-3.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libActionSheetPicker-3.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1710F7B205691A0009C92A2 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1710F7C205691A0009C92A2 /* libPods-MD360Player4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-MD360Player4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1710F7D205691A0009C92A2 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1710F7E205691A0009C92A2 /* libVIMVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libVIMVideoPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C171102420569EFE009C92A2 /* MD360Player4iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MD360Player4iOS copy-Info.plist"; path = "/Users/mfedler/Workspaces/SML/MD360Player4iOS/MD360Player4iOS/MDVRLibrary/MD360Player4iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		C171102A2056A06B009C92A2 /* MDVRLibraryFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDVRLibraryFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C171102C2056A06B009C92A2 /* MDVRLibraryFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDVRLibraryFramework.h; sourceTree = "<group>"; };
+		C171102D2056A06B009C92A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5E1EE6D41CBEA56B004E0B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17110262056A06B009C92A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -164,7 +258,10 @@
 			isa = PBXGroup;
 			children = (
 				5E1EE6D91CBEA56B004E0B79 /* MDVRLibrary */,
+				C171102B2056A06B009C92A2 /* MDVRLibraryFramework */,
 				5E1EE6D81CBEA56B004E0B79 /* Products */,
+				C1710F7320569115009C92A2 /* Frameworks */,
+				C171102420569EFE009C92A2 /* MD360Player4iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1EE6D71CBEA56B004E0B79 /* libMDVRLibrary.a */,
+				C171102A2056A06B009C92A2 /* MDVRLibraryFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -316,7 +414,72 @@
 			name = videoadapter;
 			sourceTree = "<group>";
 		};
+		C1710F7320569115009C92A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1710F7A205691A0009C92A2 /* libActionSheetPicker-3.0.a */,
+				C1710F7B205691A0009C92A2 /* libAFNetworking.a */,
+				C1710F7C205691A0009C92A2 /* libPods-MD360Player4iOS.a */,
+				C1710F7D205691A0009C92A2 /* libSDWebImage.a */,
+				C1710F7E205691A0009C92A2 /* libVIMVideoPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C171102B2056A06B009C92A2 /* MDVRLibraryFramework */ = {
+			isa = PBXGroup;
+			children = (
+				C171102C2056A06B009C92A2 /* MDVRLibraryFramework.h */,
+				C171102D2056A06B009C92A2 /* Info.plist */,
+			);
+			path = MDVRLibraryFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C17110272056A06B009C92A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17110632056A162009C92A2 /* BarrelDistortionConfig.h in Headers */,
+				C17110752056A162009C92A2 /* MDVRHeader.h in Headers */,
+				C171106A2056A162009C92A2 /* MD360Texture.h in Headers */,
+				C17110672056A162009C92A2 /* MDHotspot.h in Headers */,
+				C17110662056A162009C92A2 /* MDAbsPlugin.h in Headers */,
+				C17110732056A162009C92A2 /* MDPlaneScaleCalculator.h in Headers */,
+				C17110652056A162009C92A2 /* MDVideoDataAdatperAVPlayerImpl.h in Headers */,
+				C171107B2056A162009C92A2 /* MDGLRendererDelegate.h in Headers */,
+				C171105F2056A162009C92A2 /* MDPosition.h in Headers */,
+				C171106D2056A162009C92A2 /* MDModeStrategy.h in Headers */,
+				C171106C2056A162009C92A2 /* MD360Program.h in Headers */,
+				C17110642056A162009C92A2 /* TextureProcessConfig.h in Headers */,
+				C17110712056A162009C92A2 /* MDAbsObject3D.h in Headers */,
+				C171107C2056A162009C92A2 /* MDVideoDataAdapter.h in Headers */,
+				C17110682056A162009C92A2 /* MDAbsLinePipe.h in Headers */,
+				C17110772056A162009C92A2 /* GLUtil.h in Headers */,
+				C171106F2056A162009C92A2 /* MDDisplayStrategy.h in Headers */,
+				C171102E2056A06B009C92A2 /* MDVRLibraryFramework.h in Headers */,
+				C171107E2056A162009C92A2 /* VRUtil.h in Headers */,
+				C17110602056A162009C92A2 /* MDRay.h in Headers */,
+				C17110792056A162009C92A2 /* MD360Renderer.h in Headers */,
+				C17110742056A162009C92A2 /* MDExt.h in Headers */,
+				C17110702056A162009C92A2 /* MDProjectionStrategy.h in Headers */,
+				C171106B2056A162009C92A2 /* IMDTextureProcessor.h in Headers */,
+				C17110612056A162009C92A2 /* MDHitEvent.h in Headers */,
+				C17110622056A162009C92A2 /* MDHitPoint.h in Headers */,
+				C17110762056A162009C92A2 /* MDVRLibrary.h in Headers */,
+				C17110782056A162009C92A2 /* MD360Director.h in Headers */,
+				C171105E2056A162009C92A2 /* MDVector3D.h in Headers */,
+				C171107D2056A162009C92A2 /* MDTouchHelper.h in Headers */,
+				C17110722056A162009C92A2 /* MDObject3DHelper.h in Headers */,
+				C17110692056A162009C92A2 /* MDDrawingCache.h in Headers */,
+				C171106E2056A162009C92A2 /* MDInteractiveStrategy.h in Headers */,
+				C171107A2056A162009C92A2 /* MDGLKViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5E1EE6D61CBEA56B004E0B79 /* MDVRLibrary */ = {
@@ -336,6 +499,24 @@
 			productReference = 5E1EE6D71CBEA56B004E0B79 /* libMDVRLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C17110292056A06B009C92A2 /* MDVRLibraryFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C171102F2056A06B009C92A2 /* Build configuration list for PBXNativeTarget "MDVRLibraryFramework" */;
+			buildPhases = (
+				C17110252056A06B009C92A2 /* Sources */,
+				C17110262056A06B009C92A2 /* Frameworks */,
+				C17110272056A06B009C92A2 /* Headers */,
+				C17110282056A06B009C92A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDVRLibraryFramework;
+			productName = MDVRLibraryFramework;
+			productReference = C171102A2056A06B009C92A2 /* MDVRLibraryFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,6 +528,10 @@
 				TargetAttributes = {
 					5E1EE6D61CBEA56B004E0B79 = {
 						CreatedOnToolsVersion = 7.2.1;
+					};
+					C17110292056A06B009C92A2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -363,9 +548,21 @@
 			projectRoot = "";
 			targets = (
 				5E1EE6D61CBEA56B004E0B79 /* MDVRLibrary */,
+				C17110292056A06B009C92A2 /* MDVRLibraryFramework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C17110282056A06B009C92A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17110322056A091009C92A2 /* vrlibraw.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E1EE6D31CBEA56B004E0B79 /* Sources */ = {
@@ -415,6 +612,56 @@
 				5EA133EF1D4E3E8F0090B8AB /* MDPanoramaPlugin.m in Sources */,
 				5E59F6381D242A6B002DADC9 /* MDSphere3D.m in Sources */,
 				5EB70A5B1F08D312008A8601 /* MDBarrelDistortionLinePipe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17110252056A06B009C92A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C171104A2056A0F5009C92A2 /* MDYUV420PProgram.m in Sources */,
+				C17110442056A0F5009C92A2 /* MD360Texture.m in Sources */,
+				C171103F2056A0F5009C92A2 /* MDPanoramaPlugin.m in Sources */,
+				C171105D2056A0F5009C92A2 /* VRUtil.m in Sources */,
+				C17110502056A0F5009C92A2 /* MDAbsObject3D.m in Sources */,
+				C171103B2056A0F5009C92A2 /* MDVideoFrameAdapter.m in Sources */,
+				C17110402056A0F5009C92A2 /* MDHotspot.m in Sources */,
+				C17110562056A0F5009C92A2 /* MDPlaneScaleCalculator.m in Sources */,
+				C17110592056A0F5009C92A2 /* MD360Director.m in Sources */,
+				C17110472056A0F5009C92A2 /* MDYUV420PVideoTexture.m in Sources */,
+				C17110572056A0F5009C92A2 /* MDVRLibrary.m in Sources */,
+				C171103C2056A0F5009C92A2 /* MDIJKAdapter.m in Sources */,
+				C171103A2056A0F5009C92A2 /* MDVideoDataAdatperAVPlayerImpl.m in Sources */,
+				C171104E2056A0F5009C92A2 /* MDDisplayStrategy.m in Sources */,
+				C17110422056A0F5009C92A2 /* MDBarrelDistortionLinePipe.m in Sources */,
+				C17110352056A0F5009C92A2 /* MDRay.m in Sources */,
+				C17110412056A0F5009C92A2 /* MDAbsLinePipe.m in Sources */,
+				C171104D2056A0F5009C92A2 /* MDInteractiveStrategy.m in Sources */,
+				C17110552056A0F5009C92A2 /* MDObject3DHelper.m in Sources */,
+				C17110522056A0F5009C92A2 /* MDStereoSphere3D.m in Sources */,
+				C17110582056A0F5009C92A2 /* GLUtil.m in Sources */,
+				C17110532056A0F5009C92A2 /* MDDome3D.m in Sources */,
+				C17110452056A0F5009C92A2 /* MDRGBABitmapTexture.m in Sources */,
+				C17110392056A0F5009C92A2 /* TextureProcessConfig.m in Sources */,
+				C171105B2056A0F5009C92A2 /* MDGLKViewController.m in Sources */,
+				C17110492056A0F5009C92A2 /* MDRGBAProgram.m in Sources */,
+				C17110332056A0F5009C92A2 /* MDVector3D.m in Sources */,
+				C17110482056A0F5009C92A2 /* MD360Program.m in Sources */,
+				C17110542056A0F5009C92A2 /* MDPlane.m in Sources */,
+				C171105A2056A0F5009C92A2 /* MD360Renderer.m in Sources */,
+				C17110512056A0F5009C92A2 /* MDSphere3D.m in Sources */,
+				C171104B2056A0F5009C92A2 /* MDRGBAFboProgram.m in Sources */,
+				C17110382056A0F5009C92A2 /* BarrelDistortionConfig.m in Sources */,
+				C171104C2056A0F5009C92A2 /* MDModeStrategy.m in Sources */,
+				C17110432056A0F5009C92A2 /* MDDrawingCache.m in Sources */,
+				C171105C2056A0F5009C92A2 /* MDTouchHelper.m in Sources */,
+				C17110342056A0F5009C92A2 /* MDPosition.m in Sources */,
+				C17110372056A0F5009C92A2 /* MDHitPoint.m in Sources */,
+				C17110462056A0F5009C92A2 /* MDRGBAVideoTexture.m in Sources */,
+				C171103D2056A0F5009C92A2 /* MDAbsPlugin.m in Sources */,
+				C17110362056A0F5009C92A2 /* MDHitEvent.m in Sources */,
+				C171103E2056A0F5009C92A2 /* MDPluginManager.m in Sources */,
+				C171104F2056A0F5009C92A2 /* MDProjectionStrategy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +776,84 @@
 			};
 			name = Release;
 		};
+		C17110302056A06B009C92A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MDVRLibraryFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmobilelabs.evo.ios.MDVRLibraryFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C17110312056A06B009C92A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MDVRLibraryFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmobilelabs.evo.ios.MDVRLibraryFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -546,6 +871,15 @@
 			buildConfigurations = (
 				5E1EE6E11CBEA56B004E0B79 /* Debug */,
 				5E1EE6E21CBEA56B004E0B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C171102F2056A06B009C92A2 /* Build configuration list for PBXNativeTarget "MDVRLibraryFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17110302056A06B009C92A2 /* Debug */,
+				C17110312056A06B009C92A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
