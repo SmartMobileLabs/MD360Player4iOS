@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 #import "MD360Director.h"
+#import "MDGLKViewController.h"
 #import "MDVideoDataAdapter.h"
 #import "MDExt.h"
 #import "MDVRHeader.h"
@@ -63,6 +64,8 @@ typedef NS_ENUM(NSInteger, MDModeProjection) {
 
 #pragma mark MDVRLibrary
 @interface MDVRLibrary : NSObject
+@property (nonatomic,weak,readonly) MDGLKViewController* glkViewController;
+
 + (MDVRConfiguration*) createConfig;
 
 - (void) switchInteractiveMode;

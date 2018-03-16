@@ -552,7 +552,8 @@
 				TargetAttributes = {
 					5E0A0BB11CA8146E005F08CC = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2QC4N95ACW;
+						DevelopmentTeam = VWA699KJRR;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -769,6 +770,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VWA699KJRR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -789,7 +792,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moredoo.MD360Player4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c071225b-07c3-48fd-9b96-8da98838ccae";
+				PROVISIONING_PROFILE_SPECIFIER = "Development Wildcard Profile";
 			};
 			name = Debug;
 		};
@@ -800,6 +804,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VWA699KJRR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -820,7 +826,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moredoo.MD360Player4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c071225b-07c3-48fd-9b96-8da98838ccae";
+				PROVISIONING_PROFILE_SPECIFIER = "Development Wildcard Profile";
 			};
 			name = Release;
 		};

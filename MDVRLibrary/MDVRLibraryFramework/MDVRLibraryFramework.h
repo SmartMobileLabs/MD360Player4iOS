@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char MDVRLibraryFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MDVRLibraryFramework/PublicHeader.h>
 
-#import <MD360Player4iOS/MDVRLibrary.h>
+#import <MDVRLibraryFramework/MDVRLibrary.h>

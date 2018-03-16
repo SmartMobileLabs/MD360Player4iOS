@@ -7,7 +7,6 @@
 //
 
 #import "MDVRLibrary.h"
-#import "MDGLKViewController.h"
 #import "MD360Renderer.h"
 #import "MD360Texture.h"
 #import "MDInteractiveStrategy.h"
@@ -31,6 +30,7 @@
 @property (nonatomic,strong) MDTouchHelper* touchHelper;
 @property (nonatomic,strong) MDSizeContext* sizeContext;
 @property (nonatomic,weak) UIView* parentView;
+@property (nonatomic,weak) MDGLKViewController* glkViewController;
 @end
 
 #pragma mark MDVRLibrary
@@ -48,11 +48,11 @@
     return self;
 }
 
--(void)dealloc{
-    for(UIView* view in self.parentView.subviews){
-        [view removeFromSuperview];
-    }
-}
+//-(void)dealloc{
+//    for(UIView* view in self.parentView.subviews){
+//        [view removeFromSuperview];
+//    }
+//}
 
 - (void) setup {
     [self.touchHelper registerTo:self.parentView];
@@ -81,9 +81,12 @@
     self.renderer = [builder build];
     glkViewController.rendererDelegate = self.renderer;
     
-    [glkViewController.view setFrame:parentView.frame];
+//    [glkViewController.view setFrame:parentView.frame];
+    [glkViewController.view setFrame:parentView.bounds];
     
-    [parentView insertSubview:glkViewController.view atIndex:0];
+//    [parentView insertSubview:glkViewController.view atIndex:0];
+    self.glkViewController = glkViewController;
+    [parentView addSubview:glkViewController.view];
     if (viewController != nil) {
         [viewController addChildViewController:glkViewController];
         [glkViewController didMoveToParentViewController:viewController];

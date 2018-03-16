@@ -19,7 +19,7 @@
 
 - (void) onFrameAvailable:(MDVideoFrame*) frame{
     if (self.callback != nil) {
-        NSLog(@"onFrameAvailable: frame");
+//        NSLog(@"onFrameAvailable: frame");
         [self.callback texture:(MDVideoFrame*)frame];
     }
 }
