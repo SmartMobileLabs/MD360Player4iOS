@@ -124,6 +124,12 @@
     self.mProvider = nil;
 }
 
+-(void)dealloc{
+    if (self.textures) {
+        free(self.textures);
+    }
+}
+
 - (BOOL) updateTexture:(EAGLContext*)context{
     return self.mRendererBegin;
 }

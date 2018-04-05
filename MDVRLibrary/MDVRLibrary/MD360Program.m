@@ -25,6 +25,12 @@
     vertexShaderHandle = fragmentShaderHandle = _mProgramHandle = 0;
 }
 
+-(void)dealloc{
+    if (self.mTextureUniformHandle) {
+        free(self.mTextureUniformHandle);
+    }
+}
+
 - (void) use {
     if(self.mProgramHandle) glUseProgram(self.mProgramHandle);
 }

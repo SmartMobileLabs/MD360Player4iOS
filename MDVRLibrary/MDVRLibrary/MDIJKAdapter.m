@@ -17,6 +17,8 @@
     id<MDIJKSDLGLView> setter = (id<MDIJKSDLGLView>)ijk_sdl_view;
     if ([setter respondsToSelector:@selector(setFrameCallback:)]) {
         [setter setFrameCallback:adapter];
+    } else {
+        NSLog(@"MDIJKAdapter:wrap: setFrameCallback not responding\n");
     }
     
     return adapter;

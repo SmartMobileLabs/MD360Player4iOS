@@ -229,6 +229,7 @@
     [object3D setTextureIndex:0 buffer:texcoords1 size:numPoint * 2];
     [object3D setTextureIndex:1 buffer:texcoords2 size:numPoint * 2];
     
+    free(texcoords);
     free(texcoords1);
     free(texcoords2);
     free(vertexs);
