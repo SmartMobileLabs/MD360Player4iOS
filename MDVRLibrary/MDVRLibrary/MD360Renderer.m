@@ -77,26 +77,26 @@ typedef NS_ENUM(NSInteger, MDTextureProcessStep) {
     self.mMainLinePipe = [[MDBarrelDistortionLinePipe alloc] initWith:self.mDisplayStrategyManager];
 }
 
-- (void) rendererOnCreated:(EAGLContext*)context{
+- (void) rendererOnCreated:(EAGLContext*)context object:errorNotifyObject{
     
     NSArray* plugins = [self.mPluginManager getPlugins];
     for (MDAbsPlugin* plugin in plugins) {
         [plugin setup:context];
     }
     
-    [GLUtil glCheck:@"rendererOnCreated"];
+    [GLUtil glCheck:@"rendererOnCreated" object:errorNotifyObject];
 }
 
-- (void) rendererOnChanged:(EAGLContext*)context width:(int)width height:(int)height{
+- (void) rendererOnChanged:(EAGLContext*)context width:(int)width height:(int)height object:errorNotifyObject{
     NSArray* plugins = [self.mPluginManager getPlugins];
     for (MDAbsPlugin* plugin in plugins) {
         [plugin resizeWidth:width height:height];
     }
     
-    [GLUtil glCheck:@"rendererOnChanged"];
+    [GLUtil glCheck:@"rendererOnChanged" object:errorNotifyObject];
 }
 
-- (void) rendererOnDrawFrame:(EAGLContext*)context width:(int)width height:(int)height{
+- (void) rendererOnDrawFrame:(EAGLContext*)context width:(int)width height:(int)height object:errorNotifyObject{
     // draw
     float scale = [GLUtil getScrrenScale];
     int widthPx = width * scale;
@@ -152,7 +152,7 @@ typedef NS_ENUM(NSInteger, MDTextureProcessStep) {
         // clear
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        [GLUtil glCheck:@"glClear"];
+        [GLUtil glCheck:@"glClear" object:errorNotifyObject];
         
         [self.mMainLinePipe commitTotalWidth:widthPx totalHeight:heightPx size:size texture:self.mProcessorData.textureResult];
         [self.mProcessorData done];

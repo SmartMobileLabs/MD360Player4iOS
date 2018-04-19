@@ -15,6 +15,7 @@
 
 @interface MDGLKViewController : GLKViewController<UIGestureRecognizerDelegate>
 @property (nonatomic,weak) id<MDGLRendererDelegate> rendererDelegate;
+@property (nonatomic,weak) NSObject* errorNotifyObject;
 @property (nonatomic,strong) NSString* name;
 // @property (nonatomic,weak) id<MDTouchDelegate> touchDelegate;
 

@@ -12,9 +12,9 @@
 
 @protocol MDGLRendererDelegate <NSObject>
 @required
-- (void) rendererOnCreated:(EAGLContext*)context;
-- (void) rendererOnChanged:(EAGLContext*)context width:(int)width height:(int)height;
-- (void) rendererOnDrawFrame:(EAGLContext*)context width:(int)width height:(int)height;
+- (void) rendererOnCreated:(EAGLContext*)context object:(NSObject*)object;
+- (void) rendererOnChanged:(EAGLContext*)context width:(int)width height:(int)height object:(NSObject*)object;
+- (void) rendererOnDrawFrame:(EAGLContext*)context width:(int)width height:(int)height object:(NSObject*)object;
 - (void) rendererOnDestroy:(EAGLContext*) context;
 @end
 

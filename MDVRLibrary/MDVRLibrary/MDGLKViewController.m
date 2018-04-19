@@ -46,9 +46,9 @@
         GLKView *view = (GLKView *)self.view;
         view.context = self.context;
         view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
-        if ([self.rendererDelegate respondsToSelector:@selector(rendererOnCreated:)]) {
-            [self.rendererDelegate rendererOnCreated:self.context];
-            [GLUtil glCheck:@"rendererOnCreated"];
+        if ([self.rendererDelegate respondsToSelector:@selector(rendererOnCreated:object:)]) {
+            [self.rendererDelegate rendererOnCreated:self.context object:self.errorNotifyObject];
+            [GLUtil glCheck:@"rendererOnCreated" object:self.errorNotifyObject];
         }
     }
 }
@@ -56,11 +56,11 @@
 - (void)viewDidLayoutSubviews{
     if (self.context == nil) return;
     if ([EAGLContext setCurrentContext:self.context]) {
-        if([self.rendererDelegate respondsToSelector:@selector(rendererOnChanged:width:height:)]){
+        if([self.rendererDelegate respondsToSelector:@selector(rendererOnChanged:width:height:object:)]){
             int width = self.view.bounds.size.width;
             int height = self.view.bounds.size.height;
-            [self.rendererDelegate rendererOnChanged:self.context width:width height:height];
-            [GLUtil glCheck:@"rendererOnChanged"];
+            [self.rendererDelegate rendererOnChanged:self.context width:width height:height object:self.errorNotifyObject];
+            [GLUtil glCheck:@"rendererOnChanged" object:self.errorNotifyObject];
         }
     }
 }
@@ -68,9 +68,9 @@
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
         
     if ([EAGLContext setCurrentContext:self.context]) {
-        if ([self.rendererDelegate respondsToSelector:@selector(rendererOnDrawFrame:width:height:)]) {
-            [self.rendererDelegate rendererOnDrawFrame:self.context width:rect.size.width height:rect.size.height];
-            [GLUtil glCheck:@"rendererOnDrawFrame"];
+        if ([self.rendererDelegate respondsToSelector:@selector(rendererOnDrawFrame:width:height:object:)]) {
+            [self.rendererDelegate rendererOnDrawFrame:self.context width:rect.size.width height:rect.size.height object:self.errorNotifyObject];
+            [GLUtil glCheck:@"rendererOnDrawFrame" object:self.errorNotifyObject];
         }
     }
 }

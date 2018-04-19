@@ -71,6 +71,7 @@
 - (void) setupDisplay:(UIViewController*)viewController view:(UIView*)parentView config:(TextureProcessConfig*) config {
     
     MDGLKViewController* glkViewController = [[MDGLKViewController alloc] initWithSharedgroup:config.sharegroup];
+    glkViewController.errorNotifyObject = self;
     
     // renderer
     MD360RendererBuilder* builder = [MD360Renderer builder];
@@ -256,6 +257,7 @@
     // texture
     library.texture = self.texture;
     library.texture.sizeContext = library.sizeContext;
+    library.texture.errorNotifyObject = library;
     
     // program
     library.program = self.program;

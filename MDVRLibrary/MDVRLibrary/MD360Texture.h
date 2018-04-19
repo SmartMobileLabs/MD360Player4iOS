@@ -10,12 +10,13 @@
 #import "GLUtil.h"
 #import "MDVideoDataAdapter.h"
 #import "MDVRHeader.h"
-
+#import "MDVRLibrary.h"
 
 @interface MD360Texture : NSObject<IMDDestroyable>
 @property (nonatomic,weak) MDSizeContext* sizeContext;
 @property (nonatomic,weak) EAGLContext* context;
 @property (nonatomic,strong) MD360Program* program;
+@property (nonatomic,weak) NSObject* errorNotifyObject;
 
 - (void) createTexture:(EAGLContext*)context program:(MD360Program*) program;
 - (void) resizeViewport:(int)width height:(int)height;

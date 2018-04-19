@@ -69,7 +69,7 @@
     
     // use
     [self.mProgram use];
-    [GLUtil glCheck:@"mProgram use"];
+    [GLUtil glCheck:@"mProgram use" object:self.mTexture.errorNotifyObject];
     
     // update texture
     [self.mTexture updateTexture:context];
@@ -77,11 +77,11 @@
     // upload
     [object3D uploadVerticesBufferIfNeed:self.mProgram index:index];
     [object3D uploadTexCoordinateBufferIfNeed:self.mProgram index:index];
-    [GLUtil glCheck:@"uploadDataToProgram"];
+    [GLUtil glCheck:@"uploadDataToProgram" object:self.mTexture.errorNotifyObject];
     
     // Pass in the combined matrix.
     [direcotr shot:self.mProgram];
-    [GLUtil glCheck:@"shot"];
+    [GLUtil glCheck:@"shot" object:self.mTexture.errorNotifyObject];
     
     [object3D onDraw];
 

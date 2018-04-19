@@ -94,6 +94,12 @@
                 break;
             default:
                 NSLog(@"[yuv420p] unexpected format %x\n", frame->format);
+                
+                if (self.errorNotifyObject) {
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"MD360Error"
+                                                                        object:self.errorNotifyObject];
+                }
+                
                 return;
         }
         

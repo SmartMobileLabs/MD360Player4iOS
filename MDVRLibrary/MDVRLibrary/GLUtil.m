@@ -307,7 +307,7 @@ typedef struct
     free(imageData);
 }
 
-+ (void) glCheck:(NSString*) msg{
++ (void) glCheck:(NSString*)msg object:(NSObject*)object{
     int error;
     while( (error = glGetError()) != GL_NO_ERROR ){
         NSString* desc;
@@ -320,7 +320,16 @@ typedef struct
             case GL_INVALID_FRAMEBUFFER_OPERATION:  desc = @"INVALID_FRAMEBUFFER_OPERATION";  break;
         }
         NSLog(@"************ glError:%@ *** %@",msg,desc);
+        
+        if (object) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"MD360Error"
+                                                                object:object];
+        }
     }
+}
+
++ (void) glCheck:(NSString*) msg{
+    [GLUtil glCheck:msg object:nil];
 }
 
 + (GLKMatrix4) calculateMatrixFromQuaternion:(CMQuaternion*)quaternion orientation:(UIInterfaceOrientation) orientation{
